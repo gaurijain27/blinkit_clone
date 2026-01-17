@@ -1,0 +1,179 @@
+html,*{
+  margin:0;
+  font-family:Arial, Helvetica, serif;
+  box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.navbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:20px 40px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+  background:white;
+  position: fixed;
+  width: 100%;
+}
+
+.logo{
+  height:50px;
+  padding: 10px;
+}
+
+.left{
+  display:flex;
+  align-items:center;
+  gap:25px;
+}
+
+.location .delivery{
+  font-size:18px;
+  font-weight: bolder;
+  color: black;
+  padding-left: 30px;
+}
+
+.location .place{
+  padding-left: 30px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.search input{
+  width:420px;
+  padding:15px 15px;
+  border-radius:8px;
+  border:1px solid rgb(196, 193, 193);
+  background-color: rgb(233, 228, 228);
+  outline:none;
+}
+
+.right{
+  display:flex;
+  align-items:center;
+  gap:100px;
+}
+
+.login{
+  font-weight:100;
+  font-size: 20px;
+  color: gray;
+}
+
+.cart{
+  padding:15px 18px;
+  border:none;
+  border-radius:10px;
+  background:rgb(221, 221, 221);
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.banner{
+   width: 100%;
+}
+
+.grid1{
+    display: grid;
+    grid-auto-flow: column;
+    width: auto;
+    justify-content: space-evenly;
+    justify-content: left;
+    column-gap: 20px;
+}
+
+.card{
+    height: auto;
+    width: 100%;
+    align-items: center;
+}
+
+.card img{
+    width: 350px;
+    border-radius: 20px;
+}
+
+.gridHeading{
+  display: flex;
+  justify-content: space-between;
+}
+.gridHeading .seeAll{
+  color: rgb(49, 134, 22);
+  font-size: 20px;
+}
+
+.grid2{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(9,1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.grid2 .cards{
+    place-items: center;
+    width: min-content;
+    padding: 5px;
+
+}
+
+.grid2 img{
+    height: 100px;
+    width: 90px;
+    border-radius: 10px;
+}
+
+.grid2 .tag{
+    font-size: 12px;
+    color: rgb(114, 114, 114);
+    text-align: center;
+    font-weight: bold;
+}
+
+.grid3{
+    display: flex;
+    gap: 30px;
+    overflow-x: scroll;
+}
+
+.grid3 .cards{
+    width: max-content;
+    border: solid rgb(194, 192, 192);
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: black;
+}
+
+.grid3 .cards img{
+    width:170px;
+    height:150px;
+    border-radius: 10px;
+}
+
+.cardcost{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardcost .add button{
+    width: 70px;
+    height: 35px;
+    border-radius: 6px;
+    border: solid rgb(49, 134, 22);
+    border-width: 1.5px;
+    background-color: rgb(247, 255, 249);
+    color: rgb(49, 134, 22);
+    font-weight: bold;
+}
